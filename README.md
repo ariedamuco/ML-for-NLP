@@ -1,1 +1,1 @@
-# ML-for-NLP
+# Course Material for ML for NLP taught at CEU
