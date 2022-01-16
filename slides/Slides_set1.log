@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  9 JAN 2022 17:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  17 JAN 2022 00:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1154,21 +1154,21 @@ LaTeX Font Warning: Font shape `T1/cmr/m/n' in size <4> not available
 ] [3
 
 ]
-LaTeX Font Info:    Try loading font information for U+msa on input line 179.
+LaTeX Font Info:    Try loading font information for U+msa on input line 178.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 179.
+LaTeX Font Info:    Try loading font information for U+msb on input line 178.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 179.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 178.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 179.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 178.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
@@ -1178,7 +1178,7 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 <Figures/geri.png, id=49, 523.9575pt x 506.89375pt>
 File: Figures/geri.png Graphic file (type png)
  <use Figures/geri.png>
-Package pdftex.def Info: Figures/geri.png used on input line 187.
+Package pdftex.def Info: Figures/geri.png used on input line 186.
 (pdftex.def)             Requested size: 243.55646pt x 235.62581pt.
 
 [5
@@ -1267,7 +1267,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 430.
 Here is how much of TeX's memory you used:
  21143 strings out of 493089
  391817 string characters out of 6134842
- 468307 words of memory out of 5000000
+ 468305 words of memory out of 5000000
  24027 multiletter control sequences out of 15000+600000
  19491 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1283,7 +1283,7 @@ ocal/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/loc
 al/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local
 /texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb>
-Output written on Slides_set1.pdf (20 pages, 1179583 bytes).
+Output written on Slides_set1.pdf (20 pages, 1179343 bytes).
 PDF statistics:
  208 PDF objects out of 1000 (max. 8388607)
  160 compressed objects within 2 object streams

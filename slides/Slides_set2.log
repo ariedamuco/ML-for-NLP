@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  16 JAN 2022 18:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  16 JAN 2022 22:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -998,7 +998,7 @@ l extensions in ".pdf:.jpg:.jpeg:.png:" on input line 133.
 Package pgf Warning: Missing width for image "logo" ("rgs2") in draft mode. Usi
 ng 1cm instead on input line 133.
 
-No file Slides_set2.aux.
+(./Slides_set2.aux)
 \openout1 = `Slides_set2.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 135.
@@ -1015,6 +1015,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 135.
 LaTeX Font Info:    ... okay on input line 135.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 135.
 LaTeX Font Info:    ... okay on input line 135.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -1091,6 +1092,8 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 135.
 LaTeX Info: Redefining \pageref on input line 135.
 LaTeX Info: Redefining \nameref on input line 135.
+
+(./Slides_set2.out) (./Slides_set2.out)
 \@outlinefile=\write5
 \openout5 = `Slides_set2.out'.
 
@@ -1162,8 +1165,9 @@ See the caption package documentation for explanation.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count184
-No file Slides_set2.nav.
+(./Slides_set2.nav)
 LaTeX Font Info:    Try loading font information for U+msa on input line 138.
+
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
@@ -1199,7 +1203,7 @@ LaTeX Font Warning: Font shape `T1/cmr/m/n' in size <4> not available
 
 ] [6
 
-] <Figures/overfitting.png, id=61, 993.7125pt x 689.57625pt>
+] <Figures/overfitting.png, id=62, 993.7125pt x 689.57625pt>
 File: Figures/overfitting.png Graphic file (type png)
 
 <use Figures/overfitting.png>
@@ -1210,7 +1214,7 @@ Package pdftex.def Info: Figures/overfitting.png used on input line 217.
  <./Figures/overfitting.png>] [8
 
 ]
-<Figures/train-test-split.png, id=77, 1143.27126pt x 520.94624pt>
+<Figures/train-test-split.png, id=78, 1143.27126pt x 520.94624pt>
 File: Figures/train-test-split.png Graphic file (type png)
 
 <use Figures/train-test-split.png>
@@ -1219,7 +1223,7 @@ Package pdftex.def Info: Figures/train-test-split.png used on input line 241.
  [9
 
  <./Figures/train-test-split.png>]
-<Figures/threefold-split.png, id=85, 1145.27875pt x 635.37375pt>
+<Figures/threefold-split.png, id=86, 1145.27875pt x 635.37375pt>
 File: Figures/threefold-split.png Graphic file (type png)
 
 <use Figures/threefold-split.png>
@@ -1236,14 +1240,14 @@ Package pdftex.def Info: Figures/threefold-split.png used on input line 256.
  [11
 
 ]
-<Figures/cv-5.png, id=99, 883.3pt x 481.8pt>
+<Figures/cv-5.png, id=100, 883.3pt x 481.8pt>
 File: Figures/cv-5.png Graphic file (type png)
  <use Figures/cv-5.png>
 Package pdftex.def Info: Figures/cv-5.png used on input line 264.
 (pdftex.def)             Requested size: 273.99811pt x 149.45203pt.
  [12
 
- <./Figures/cv-5.png>] <Figures/cv-5-test.png, id=107, 1075.01625pt x 462.72874
+ <./Figures/cv-5.png>] <Figures/cv-5-test.png, id=108, 1075.01625pt x 462.72874
 pt>
 File: Figures/cv-5-test.png Graphic file (type png)
 
@@ -1257,7 +1261,7 @@ Package pdftex.def Info: Figures/cv-5-test.png used on input line 272.
 ] [15
 
 ]
-<Figures/k-fold.png, id=128, 950.55125pt x 623.32875pt>
+<Figures/k-fold.png, id=129, 950.55125pt x 623.32875pt>
 File: Figures/k-fold.png Graphic file (type png)
 
 <use Figures/k-fold.png>
@@ -1266,7 +1270,7 @@ Package pdftex.def Info: Figures/k-fold.png used on input line 303.
  [16
 
  <./Figures/k-fold.png>]
-<Figures/stratified-k-fold.png, id=136, 1007.765pt x 629.35126pt>
+<Figures/stratified-k-fold.png, id=137, 1007.765pt x 629.35126pt>
 File: Figures/stratified-k-fold.png Graphic file (type png)
 
 <use Figures/stratified-k-fold.png>
@@ -1279,7 +1283,7 @@ Package pdftex.def Info: Figures/stratified-k-fold.png used on input line 309.
 
 ] [19
 
-] <Figures/shuffle-split.png, id=157, 1021.8175pt x 565.11125pt>
+] <Figures/shuffle-split.png, id=158, 1021.8175pt x 565.11125pt>
 File: Figures/shuffle-split.png Graphic file (type png)
 
 <use Figures/shuffle-split.png>
@@ -1294,7 +1298,7 @@ Package pdftex.def Info: Figures/shuffle-split.png used on input line 350.
 
 ] [23
 
-] <Figures/time-series.png, id=184, 807.015pt x 524.96124pt>
+] <Figures/time-series.png, id=185, 807.015pt x 524.96124pt>
 File: Figures/time-series.png Graphic file (type png)
 
 <use Figures/time-series.png>
@@ -1303,7 +1307,7 @@ Package pdftex.def Info: Figures/time-series.png used on input line 388.
  [24
 
  <./Figures/time-series.png>]
-<Figures/time-series-split.png, id=192, 732.7375pt x 519.9425pt>
+<Figures/time-series-split.png, id=193, 732.7375pt x 519.9425pt>
 File: Figures/time-series-split.png Graphic file (type png)
 
 <use Figures/time-series-split.png>
@@ -1312,7 +1316,7 @@ Package pdftex.def Info: Figures/time-series-split.png used on input line 394.
  [25
 
  <./Figures/time-series-split.png>]
-<Figures/time-series-train-test.png, id=201, 752.8125pt x 518.93875pt>
+<Figures/time-series-train-test.png, id=202, 752.8125pt x 518.93875pt>
 File: Figures/time-series-train-test.png Graphic file (type png)
 
 <use Figures/time-series-train-test.png>
@@ -1322,7 +1326,7 @@ Package pdftex.def Info: Figures/time-series-train-test.png used on input line
  [26
 
  <./Figures/time-series-train-test.png>] <Figures/time-series-rolling.png, id=2
-09, 997.7275pt x 627.34375pt>
+10, 997.7275pt x 627.34375pt>
 File: Figures/time-series-rolling.png Graphic file (type png)
 
 <use Figures/time-series-rolling.png>
@@ -1332,7 +1336,7 @@ Package pdftex.def Info: Figures/time-series-rolling.png used on input line 406
  [27
 
  <./Figures/time-series-rolling.png>]
-<Figures/time-series-rolling2.png, id=217, 1013.7875pt x 623.32875pt>
+<Figures/time-series-rolling2.png, id=218, 1013.7875pt x 623.32875pt>
 File: Figures/time-series-rolling2.png Graphic file (type png)
 
 <use Figures/time-series-rolling2.png>
@@ -1373,15 +1377,9 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 492.
 (./Slides_set2.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 492.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 492.
+Package rerunfilecheck Info: File `Slides_set2.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
-
-Package rerunfilecheck Warning: File `Slides_set2.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Slides_set2.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
@@ -1389,10 +1387,10 @@ LaTeX Font Warning: Size substitutions with differences
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 492.
  ) 
 Here is how much of TeX's memory you used:
- 21146 strings out of 493089
- 392198 string characters out of 6134842
- 465567 words of memory out of 5000000
- 23998 multiletter control sequences out of 15000+600000
+ 21227 strings out of 493089
+ 392901 string characters out of 6134842
+ 465682 words of memory out of 5000000
+ 24071 multiletter control sequences out of 15000+600000
  23115 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  67i,16n,102p,421b,544s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1409,7 +1407,7 @@ al/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local
 /texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/tex
 live/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb>
-Output written on Slides_set2.pdf (34 pages, 2291816 bytes).
+Output written on Slides_set2.pdf (34 pages, 2289727 bytes).
 PDF statistics:
  323 PDF objects out of 1000 (max. 8388607)
  238 compressed objects within 3 object streams
