@@ -1,0 +1,298 @@
+\documentclass[compress, aspectratio=54]{beamer}
+%\documentclass[notes=show]{beamer}
+%\documentclass[xcolor=dvipsnames]{beamer}
+\usepackage[export]{adjustbox}
+\usepackage{sidecap}
+\usepackage{subfig}
+\usepackage{amssymb}
+\usepackage{latexsym}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage[absolute,overlay]{textpos}
+\usepackage[english]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{subfig}
+%\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage{tabularx}
+\newcolumntype{Y}{>{\small\raggedright\arraybackslash}X}
+\usepackage{graphicx}
+\usepackage{bigstrut}
+\usepackage{bbm}
+\usepackage{mathrsfs}
+\usepackage{epsfig}
+\usepackage{array}
+%\usepackage{natbib}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+\usepackage{caption}
+\usepackage{xcolor}
+
+\mode<presentation> {
+%\usetheme[left,width=1.7cm]{Berkeley}
+%\usetheme{default}
+\usetheme{Boadilla}
+  \usecolortheme[RGB={103,102,204}]{structure}
+%\usecolortheme{dove}
+  \useoutertheme{infolines}
+  \setbeamercovered{transparent}
+ }
+
+%\usepackage[utf8]{inputenc}
+
+% Default fixed font does not support bold face
+\DeclareFixedFont{\ttb}{T1}{txtt}{bx}{n}{12} % for bold
+\DeclareFixedFont{\ttm}{T1}{txtt}{m}{n}{12}  % for normal
+
+% Custom colors
+\usepackage{color}
+\definecolor{deepblue}{rgb}{0,0,0.5}
+\definecolor{deepred}{rgb}{0.6,0,0}
+\definecolor{deepgreen}{rgb}{0,0.5,0}
+
+\usepackage{listings}
+
+% Python style for highlighting
+\newcommand\pythonstyle{\lstset{
+language=Python,
+basicstyle=\ttm,
+otherkeywords={self},             % Add keywords here
+keywordstyle=\ttb\color{deepblue},
+emph={MyClass,__init__},          % Custom highlighting
+emphstyle=\ttb\color{deepred},    % Custom highlighting style
+stringstyle=\color{deepgreen},
+frame=tb,                         % Any extra options here
+showstringspaces=false            % 
+}}
+
+
+% Python environment
+\lstnewenvironment{python}[1][]
+{
+\pythonstyle
+\lstset{#1}
+}
+{}
+
+% Python for external files
+\newcommand\pythonexternal[2][]{{
+\pythonstyle
+\lstinputlisting[#1]{#2}}}
+
+% Python for inline
+\newcommand\pythoninline[1]{{\pythonstyle\lstinline!#1!}}
+%\renewcommand{\familydefault}{cmss}
+%\renewcommand{\mathrm}{\mathsf}
+%\renewcommand{\textrm}{\textsf}
+\usefonttheme{serif}
+\newcommand{\X}{{\mathbf{X}}}
+\newcommand{\x}{{\mathbf{x}}}
+\newcommand{\E}{\mathsf{E}}
+\newcommand{\V}{\mathsf{Var}}
+
+\DeclareGraphicsExtensions{.jpg,.pdf,.mps,.png}
+
+\setbeamercolor{bibliography entry title}{fg=black}
+\setbeamercolor{bibliography entry author}{fg=black}
+\setbeamercolor{subsection in toc}{fg=structure}
+\setbeamercolor{palette primary}{bg=structure, fg=white}
+%\setbeamercolor{palette secondary}{bg=structure, fg=black}
+%\setbeamercolor{palette tertiary}{bg=structure, fg=black}
+\setbeamercolor{caption name}{fg=black} \setbeamersize{text margin
+left=.8cm} \setbeamersize{text margin right=1cm}
+\hypersetup{linkbordercolor={1 0 0}} \setbeamertemplate{navigation
+symbols}{} \setbeamertemplate{headline}[default]
+
+\setbeamertemplate{enumerate items}[default]
+
+\newcounter{transfct}
+\newcounter{begbs}
+\newcounter{endbs}
+
+
+\title[Sentiment Analysis]{Machine Learning For Natural Language Processing}
+
+\author[Arieda Mu\c co]{Arieda Mu\c co\footnote{Based on: https://medium.com/analytics-vidhya/simplifying-social-media-sentiment-analysis-using-vader-in-python-f9e6ec6fc52f}}
+\institute[CEU]{Central European University}
+\date{}
+
+\AtBeginSection[] {
+  \begin{frame}<handout:0>
+    \frametitle{TOC}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
+
+\AtBeginSection[] {
+  \begin{frame}<handout:0>
+    \frametitle{TOC}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
+
+\pgfdeclareimage[height=.7cm]{logo}{rgs2}
+\logo{\pgfuseimage{logo}}
+\begin{document}
+\captionsetup[subfigure]{labelformat=empty}
+
+\frame{\titlepage}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------%
+
+\begin{frame}
+\frametitle{Sentiment Analysis}
+
+\begin{quote}
+If you want to understand people, especially your customers...then you have to be able to possess a strong capability to analyze text.
+\end{quote}
+\begin{flushright}
+--Paul Hoffman, CTO Space-Time Insight
+\end{flushright}
+
+\end{frame}
+%----------------------------------------------------------------------------%
+
+
+
+\begin{frame}
+
+\frametitle{What is Sentiment Analysis?}
+\begin{itemize}
+\item Sentiment Analysis, or Opinion Mining, is a sub-field of Natural Language Processing (NLP) that identifies and extracts opinions and sentiments from given text
+%\item The aim of sentiment analysis is to gauge the attitude, sentiments, evaluations, attitudes and emotions of a speaker/writer based on the computational treatment of subjectivity in a text
+
+\end{itemize}
+\end{frame}
+%----------------------------------------------------------------------------%
+
+\begin{frame}
+
+\frametitle{Why is sentiment analysis so important?}
+\begin{itemize}
+\item Majority of this data we have today is unstructured text
+\begin{itemize}
+\item Sources like emails, chats, social media, surveys, images, videos, articles, and documents. 
+\end{itemize}
+\item It's challenging
+\begin{itemize}
+
+ \item Huge amount of data involved (difficult and time consuming)
+ \item The kind of language used in them to express sentiments, i.e., short forms, memes and emoticons
+ \end{itemize}
+\end{itemize}
+\end{frame}
+
+%----------------------------------------------------------------------------%
+\begin{frame}
+\begin{figure}
+
+\includegraphics[width=0.85\linewidth ]{Figures/emoji.png}
+\end{figure}
+
+\end{frame}
+%----------------------------------------------------------------------------%
+
+
+\begin{frame}
+
+\frametitle{Why is sentiment analysis so important?}
+\begin{itemize}
+\item Sentiment Analysis allows us to make sense out of text by being able to automate this entire process
+\end{itemize}
+\end{frame}
+
+
+
+%----------------------------------------------------------------------------%
+\begin{frame}
+
+\frametitle{Why is Sentiment Analysis a Hard to perform Task?}
+\begin{itemize}
+\item Understanding emotions through text are not always easy. Sometimes even humans can get misled, so expecting a 100\% accuracy from a computer (today) is like asking for the Moon!
+\begin{itemize}
+\item A text may contain multiple sentiments all at once. For instance: \textit{The intent behind the final season of Game of Thrones was great, but it could have been way better.}
+\item Two polarities, i.e., Positive as well as Negative. How do we conclude whether the review was Positive or Negative?
+\end{itemize}
+\item Computers can't  comprehend Figurative Speech (yet). Can't understand use of similes, metaphors, hyperboles etc qualify for a figurative speech.
+\begin{itemize}
+
+ \item \textit{The best I can say about the season finale is that it was interesting.}
+ \item The word `interesting' does not necessarily convey positive sentiment and can be confusing for algorithms
+ \end{itemize}
+\end{itemize}
+\end{frame}
+
+
+%----------------------------------------------------------------------------%
+
+
+\begin{frame}
+\frametitle{Python Libraries}
+We are mainly going to use the following libraries 
+\begin{itemize}
+\item pip install nltk or conda install nltk (if you haven't installed it yet)
+\item VADER (Sentiment Analysis)
+\begin{itemize}
+
+\item Valence Aware Dictionary and sEntiment Reasoner (VADER) is a lexicon and rule-based sentiment analysis tool that is specifically attuned to sentiments expressed in social media
+\item VADER uses a combination of A sentiment lexicon is a list of lexical features (e.g., words) which are generally labelled according to their semantic orientation as either positive or negative
+\item For more info: \url{https://www.nltk.org/_modules/nltk/sentiment/vader.html}
+\end{itemize}
+
+
+\end{itemize}
+\end{frame}
+%----------------------------------------------------------------------------%
+
+
+%----------------------------------------------------------------------------%
+
+\begin{frame}
+\frametitle{VADER}
+\begin{itemize}
+\item VADER has been found to be quite successful when dealing with social media texts, NY Times editorials, movie reviews, and product reviews. 
+\item VADER not only tells about the Positivity and Negativity score but also tells us about how positive or negative a sentiment is
+\item The developers of VADER have used Amazon's Mechanical Turk to get most of their ratings, You can find complete details on their \href{https://github.com/cjhutto/vaderSentiment}{GitHub}
+\item Link to paper \url{http://comp.social.gatech.edu/papers/icwsm14.vader.hutto.pdf}
+\end{itemize}
+\end{frame}
+%----------------------------------------------------------------------------%
+
+%----------------------------------------------------------------------------%
+
+\begin{frame}
+\frametitle{Advantages of using Vader}
+\begin{itemize}
+\item It works exceedingly well on social media type text, yet readily generalizes to multiple domains
+
+\item It doesn't require any training data but is constructed from a generalizable, valence-based, human-curated gold standard sentiment lexicon
+\item It is fast enough to be used online with streaming data
+
+\item  It does not severely suffer from a speed-performance tradeoff
+\end{itemize}
+\end{frame}
+%----------------------------------------------------------------------------%
+
+
+
+\begin{frame}
+\begin{center}
+\huge{Let's try it out!!!}
+\end{center}
+\end{frame}
+
+\end{document}
+
+
+
+
+
